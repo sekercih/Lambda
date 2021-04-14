@@ -21,5 +21,15 @@ public class Stream01IntegerTekrar {
         rakamlar.stream().filter(t -> t % 2 != 0).forEach(t -> System.out.print(t + " "));
         System.out.println();
         rakamlar.stream().filter(t -> t % 2 == 0).forEach(t -> System.out.print(t + " "));
+
+        System.out.println("\n===============Çift sayilari yazdir==================");
+ciftleriYazdir(rakamlar);
+    }
+    public static void ciftleriYazdir(List<Integer>liste){
+      //  liste.stream().filter(t->t%2==0).forEach(t-> System.out.print(t+" "));
+      liste.stream().filter(Stream01IntegerTekrar::ciftMi).forEach(System.out::print);
+    }
+    public static boolean ciftMi(int x){
+        return x%2==0;
     }
 }
