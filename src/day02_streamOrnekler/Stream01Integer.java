@@ -8,7 +8,7 @@ import java.util.List;
 public class Stream01Integer {
     public static void main(String[] args) {
         List<Integer> rakamlar = new ArrayList<>();
-        rakamlar.add(5);
+        rakamlar.add(1333);
         rakamlar.add(6);
         rakamlar.add(7);
         rakamlar.add(8);
@@ -16,6 +16,8 @@ public class Stream01Integer {
         rakamlar.add(-1);
         rakamlar.add(8);
         rakamlar.add(-1000);
+        System.out.println("en buyuk sayi hangisi");
+        System.out.println(rakamlar.stream().reduce(0,(x,y)->x>y?x:y));
 
         System.out.print(rakamlar + "\n");
         System.out.println("\n==========tek sayilar===================");
@@ -48,6 +50,8 @@ public class Stream01Integer {
     public static void yazdır(int x){
         System.out.print( x + " ");
     }
+
+
 
 
 }

@@ -4,9 +4,11 @@ import day02_streamOrnekler.Stream01Integer;
 
 import java.util.*;
 
-public class Stream02Integer {
+public class Stream03Integer {
 
     public static void main(String[] args) {
+
+
 
         List<Integer> listem = new ArrayList<>();
         listem.add(12);
