@@ -21,5 +21,11 @@ public class Methotlar {
 
     public static void yazdır(int x){
         System.out.print( x + " ");
-    }
+
+}public static void yazdir(List<String>liste) {
+    liste.stream().
+            map(String::toLowerCase).
+            filter(t->t.startsWith("a")).
+            forEach(System.out::println);
+}
 }
